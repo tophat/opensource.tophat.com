@@ -1,1 +1,167 @@
-Coming Soon
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Top Hat Open Source Portal</title>
+        <link href="./normalize.css" rel="stylesheet" />
+        <link href="./styles.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.typotheque.com/WF-029067-010445.css" type="text/css" />
+    </head>
+    <body>
+        <section class="hero">
+            <div class="header">
+                <div class="logo">
+                    <a href="https://www.tophat.com/"><img src="./tophat-logo.png" /></a>
+                </div>
+                <div class="navigation">
+                    <span>Github</span>
+                    <span>Blog</span>
+                    <span>Careers</span>
+                </div>
+            </div>
+            <div class="banner">
+                <h1>Open Source at Top Hat</h1>
+                <div class="subtext">Working to make education & technology open to the world</div>
+            </div>
+        </section>
+
+        <section class="explore">
+            <div class="container">
+            <h1 class="section-title">Explore Projects</h1>
+            <div id="projects">
+                <div class="project-card">
+                    <img src="./yarn.png"/>
+                    <h3 class="project-title">Yarn Version Manager</h3>
+                    <p class="project-description">
+                        YVM is a tool that allows you to manage multiple versions of 
+                        yarn on your computer, which is especially useful when working with many projects that 
+                        have different yarn versions.
+                    </p>
+                    <p class="project-links">
+                        <a class="pink link" href="http://localhost">Website</a>
+                        <a class="pink link" href="http://localhost">Github</a>
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <img src="./yarn.png"/>
+                    <h3 class="project-title">Jenkins TL</h3>
+                    <p class="project-description">
+                        Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
+                        about the execution of their builds 
+                    </p>
+                    <p class="project-links">
+                        <a class="pink link" href="http://localhost">Website</a>
+                        <a class="pink link" href="http://localhost">Github</a>
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <img src="./yarn.png"/>
+                    <h3 class="project-title">MicroLibraries</h3>
+                    <p class="project-description">
+                        Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
+                        about the execution of their builds 
+                    </p>
+                    <p class="project-links">
+                        <a class="pink link" href="http://localhost">Website</a>
+                        <a class="pink link" href="http://localhost">Github</a>
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <img src="./yarn.png"/>
+                    <h3 class="project-title">RichTextView</h3>
+                    <p class="project-description">
+                        Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
+                        about the execution of their builds 
+                    </p>
+                    <p class="project-links">
+                        <a class="pink link" href="http://localhost">Website</a>
+                        <a class="pink link" href="http://localhost">Github</a>
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <img src="./yarn.png"/>
+                    <h3 class="project-title">Sanity Runner</h3>
+                    <p class="project-description">
+                        Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
+                        about the execution of their builds 
+                    </p>
+                    <p class="project-links">
+                        <a class="pink link" href="http://localhost">Website</a>
+                        <a class="pink link" href="http://localhost">Github</a>
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <img src="./yarn.png"/>
+                    <h3 class="project-title">Codewatch</h3>
+                    <p class="project-description">
+                        Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
+                        about the execution of their builds 
+                    </p>
+                    <p class="project-links">
+                        <a class="pink link" href="http://localhost">Website</a>
+                        <a class="pink link" href="http://localhost">Github</a>
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="join">
+            <div class="container">
+                <h1 class="section-title">Join Our Team</h1>
+                <p>
+                    Top Hat is a group of innovators, leaders, and dreamers who are reshaping
+                    the future of higher education. We're looking for people who are as excited as 
+                    we are to help build a teaching platform that transforms the way learning is delivered 
+                    at universities and colleges across the globe.
+                </p>
+                <button class="button pink">View our open positions</button>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="links">
+                   <span class="fa-stack fa-sm">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+                    </span> 
+                   <span class="fa-stack fa-sm">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                    </span> 
+                   <span class="fa-stack fa-sm">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span> 
+                   <span class="fa-stack fa-sm">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span> 
+                </div>
+                <div class="copyright">&copy; 2018 TopHat Monocle Corp.</div>
+            </div>
+        </section>
+    </body>
+
+    <script>
+        var element = document.querySelector('.hero')
+        var imageUrl = window.getComputedStyle(element).backgroundImage
+        var url = imageUrl.match(/^url\(["']?(.+?)["']?\)$/)
+        var image = new Image()
+        image.src = url[1]
+
+        image.onload = (image) => {
+            console.log(this)
+            console.log('on load called')
+            console.log(this.innerWidth)
+            console.log(this.innerHeight)
+            console.log(image)
+        }
+    </script>
+</html>

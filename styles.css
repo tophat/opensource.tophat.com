@@ -1,0 +1,146 @@
+body {
+    font-family: 'October Regular 3';
+}
+
+p {
+    font-family: 'October 3';
+    font-weight: 300;
+}
+.section-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+section {
+    text-align: center;
+    padding: 60px 100px;
+}
+.explore {
+    padding-top: 0 !important;
+}
+
+.join {
+    background-color: #fbf8ff;
+    padding: 60px 250px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.button.pink {
+    background-color: #e5166b;
+}
+
+.project-card {
+    text-align: left;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    height: 280px;
+    padding: 40px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project-description {
+    font-size: 16px;
+    height: 100px;
+}
+
+.project-links {
+    float: right;
+}
+
+.pink.link {
+    color: #e5166b;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.hero {
+    background-image: url('./opensource.png');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 650px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navigation span {
+    margin-left: 15px;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.banner {
+    text-align: left;
+    margin-top: 130px;
+    margin-left: 50px;
+    color: #FFFFFF;
+}
+
+.banner h1 {
+    font-size: 58px;
+}
+
+.banner .subtext {
+    font-size: 22px;
+}
+
+.footer {
+    padding: 40px 0;
+}
+
+.footer .copyright { 
+    float: right;
+}
+
+.footer .links { 
+    float: left;
+}
+
+.join {
+    display: flex;
+    align-items: center;
+}
+
+.join p {
+    max-width: 960px;
+    padding-top: 0;
+    font-size: 22px;
+}
+
+.links span {
+    margin-right: 15px;
+}
+
+.hero {
+    padding-top: 35px;
+}
+
+.container { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
