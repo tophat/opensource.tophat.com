@@ -108,7 +108,7 @@ section {
 }
 
 .hero {
-    background-image: url('./background-full.png');
+    background-image: url('../img/background-full.png');
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
