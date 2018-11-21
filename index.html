@@ -6,6 +6,7 @@
         <link href="./styles.css" rel="stylesheet" />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://fonts.typotheque.com/WF-029067-010445.css" type="text/css" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
     <body>
         <section class="hero">
@@ -34,8 +35,8 @@
                     <h3 class="project-title">Yarn Version Manager</h3>
                     <p class="project-description">
                         YVM is a tool that allows you to manage multiple versions of 
-                        yarn on your computer, which is especially useful when working with many projects that 
-                        have different yarn versions.
+                        Yarn, which is especially useful when working with many projects that 
+                        have different Yarn versions.
                     </p>
                     <p class="project-links">
                         <a class="pink link" href="http://localhost">Website</a>
@@ -44,7 +45,7 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="./yarn.png"/>
+                    <img src="./jenkins.png"/>
                     <h3 class="project-title">Jenkins TL</h3>
                     <p class="project-description">
                         Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
@@ -57,11 +58,10 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="./yarn.png"/>
+                    <img src="./ml.png"/>
                     <h3 class="project-title">MicroLibraries</h3>
                     <p class="project-description">
-                        Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
-                        about the execution of their builds 
+                    A higher-order component for keeping Immutable objects outside of your presentational components
                     </p>
                     <p class="project-links">
                         <a class="pink link" href="http://localhost">Website</a>
@@ -70,11 +70,10 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="./yarn.png"/>
+                    <img src="./rtv.png"/>
                     <h3 class="project-title">RichTextView</h3>
                     <p class="project-description">
-                        Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
-                        about the execution of their builds 
+                    Easily convert rich text (HTML, Latex, markdown, code tags, YouTube and Vimeo links) into iOS compatible UI View
                     </p>
                     <p class="project-links">
                         <a class="pink link" href="http://localhost">Website</a>
@@ -83,7 +82,7 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="./yarn.png"/>
+                    <img src="./runner.png"/>
                     <h3 class="project-title">Sanity Runner</h3>
                     <p class="project-description">
                         Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
@@ -96,11 +95,10 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="./yarn.png"/>
+                    <img src="./codewatch.png"/>
                     <h3 class="project-title">Codewatch</h3>
                     <p class="project-description">
-                        Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
-                        about the execution of their builds 
+                    Add highly customizable assertions and/or metrics based on your codebases's AST (Abstract Syntax Tree)
                     </p>
                     <p class="project-links">
                         <a class="pink link" href="http://localhost">Website</a>
@@ -113,14 +111,32 @@
 
         <section class="join">
             <div class="container">
-                <h1 class="section-title">Join Our Team</h1>
-                <p>
-                    Top Hat is a group of innovators, leaders, and dreamers who are reshaping
-                    the future of higher education. We're looking for people who are as excited as 
-                    we are to help build a teaching platform that transforms the way learning is delivered 
-                    at universities and colleges across the globe.
-                </p>
-                <button class="button pink">View our open positions</button>
+
+                <h1 class="section-title">Get Involved</h1>
+
+                <div class="join-columns">
+                    <div class="column">
+                        <h2>Work With Us</h2>
+                        <div class="column-content">
+                            <p>
+                            Top Hat is reshaping the future of higher education. 
+                            We’re looking for people who are as excited as we are to help build a teaching platform that transforms the way learning is delivered at universities and colleges across the globe.
+                            </p>
+                        </div>
+                        <button class="button pink">View our open positions</button>
+                    </div>
+
+                    <div class="border">
+                    </div>
+                    <div class="column">
+                        <h2>Join the Discussion</h2>
+                        <div class="column-content">
+                            <p>Give us your email and we'll invite you to Top Hat's Open Source Slack community!</p>
+                            <input id="email" name="email" />
+                        </div>
+                        <button class="button pink">Submit</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -148,20 +164,4 @@
             </div>
         </section>
     </body>
-
-    <script>
-        var element = document.querySelector('.hero')
-        var imageUrl = window.getComputedStyle(element).backgroundImage
-        var url = imageUrl.match(/^url\(["']?(.+?)["']?\)$/)
-        var image = new Image()
-        image.src = url[1]
-
-        image.onload = (image) => {
-            console.log(this)
-            console.log('on load called')
-            console.log(this.innerWidth)
-            console.log(this.innerHeight)
-            console.log(image)
-        }
-    </script>
 </html>
