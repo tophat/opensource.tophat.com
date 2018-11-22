@@ -6,8 +6,23 @@ const validateEmail = (email) => {
 const showCheckmark = () => {
     const element = document.getElementsByClassName('slack-success')[0]
     element.style.visibility = 'visible'
-    const message = document.getElementsByClassName('form-submit-message success')[0]
-    message.style.visibility = 'visible';
+}
+
+const showFormValidation = messageType => {
+    let element
+    switch(messageType) {
+        case 'success' :
+            showCheckmark()
+            element = document.getElementsByClassName('form-submit-message success')[0]
+            break
+        case 'resubmit':
+            element = document.getElementsByClassName('form-submit-message resubmit')[0]
+            break
+        case 'error':
+        default:
+            element = document.getElementsByClassName('form-submit-message error')[0]
+    }
+    element.style.visibility = 'visible';
 }
 
 const hideMessages = () => {
@@ -18,6 +33,10 @@ const hideMessages = () => {
     }
     const check = document.getElementsByClassName('slack-success')[0]
     check.style.visibility = 'hidden'
+}
+
+const resubmittingRequest = (message) => {
+    return message.indexOf('You have already been invited to Slack') > -1
 }
 
 const handleFormSubmit = (e) => {
@@ -39,8 +58,19 @@ const handleFormSubmit = (e) => {
 
     http.open('POST', url, true);
     http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      http.onreadystatechange = function() {
+        if (http.readyState === 4) {
+            const response = JSON.parse(http.response)
+            if(response.success) {
+                showFormValidation('success')
+            } else if(resubmittingRequest(response.message)) {
+                showFormValidation('resubmit')
+            } else {
+                showFormValidation('error')
+            }
+        }
+      }
     http.send(params);
-    showCheckmark()
 }
 
 
