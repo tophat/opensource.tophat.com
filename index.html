@@ -15,9 +15,9 @@
                     <a href="https://www.tophat.com/"><img src="./static/img/tophat-logo.png" /></a>
                 </div>
                 <div class="navigation">
-                    <span>Github</span>
-                    <span>Blog</span>
-                    <span>Careers</span>
+                    <span><a href="https://www.github.com/tophat">Github</a></span>
+                    <span><a href="https://www.tophat.com/blog">Blog</a></span>
+                    <span><a href="https://www.tophat.com/company/work-with-us">Careers</a></span>
                 </div>
             </div>
             <div class="banner">
@@ -31,7 +31,9 @@
             <h1 class="section-title">Explore Projects</h1>
             <div id="projects">
                 <div class="project-card">
-                    <img src="./static/img/yarn.png"/>
+                    <div class="project-logo">
+                        <img src="./static/img/yarn.png"/>
+                    </div>
                     <h3 class="project-title">Yarn Version Manager</h3>
                     <p class="project-description">
                         YVM is a tool that allows you to manage multiple versions of 
@@ -39,70 +41,80 @@
                         have different Yarn versions.
                     </p>
                     <p class="project-links">
-                        <a class="pink link" href="http://localhost">Website</a>
-                        <a class="pink link" href="http://localhost">Github</a>
+                        <a class="pink link" href="https://yvm.js.org">Website</a>
+                        <a class="pink link" href="https://www.github.com/tophat/yvm">GitHub</a>
                     </p>
                 </div>
 
                 <div class="project-card">
-                    <img src="./static/img/jenkins.png"/>
+                    <div class="project-logo">
+                        <img src="./static/img/jenkins.png"/>
+                    </div>
                     <h3 class="project-title">Jenkins TL</h3>
                     <p class="project-description">
                         Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
                         about the execution of their builds 
                     </p>
                     <p class="project-links">
-                        <a class="pink link" href="http://localhost">Website</a>
-                        <a class="pink link" href="http://localhost">Github</a>
+                        <a class="pink link" href="https://tophat.github.io/jenkins-timeline-plugin">Website</a>
+                        <a class="pink link" href="https://www.github.com/tophat/jenkins-timeline-plugin">Github</a>
                     </p>
                 </div>
 
                 <div class="project-card">
-                    <img src="./static/img/ml.png"/>
+                    <div class="project-logo">
+                        <img src="./static/img/ml.png"/>
+                    </div>
                     <h3 class="project-title">MicroLibraries</h3>
                     <p class="project-description">
                     A higher-order component for keeping Immutable objects outside of your presentational components
                     </p>
                     <p class="project-links">
-                        <a class="pink link" href="http://localhost">Website</a>
-                        <a class="pink link" href="http://localhost">Github</a>
+                        <a class="pink link" href="https://tophat.github.io/with-immutable-props-to-js">Website</a>
+                        <a class="pink link" href="https://www.github.com/tophat/with-immutable-props-to-js">Github</a>
                     </p>
                 </div>
 
                 <div class="project-card">
-                    <img src="./static/img/rtv.png"/>
+                    <div class="project-logo">
+                        <img src="./static/img/rtv.png"/>
+                    </div>
                     <h3 class="project-title">RichTextView</h3>
                     <p class="project-description">
                     Easily convert rich text (HTML, Latex, markdown, code tags, YouTube and Vimeo links) into iOS compatible UI View
                     </p>
                     <p class="project-links">
-                        <a class="pink link" href="http://localhost">Website</a>
-                        <a class="pink link" href="http://localhost">Github</a>
+                        <a class="pink link" href="https://tophat.github.io/RichTextView">Website</a>
+                        <a class="pink link" href="https://www.github.com/tophat/RichTextView">Github</a>
                     </p>
                 </div>
 
                 <div class="project-card">
-                    <img src="./static/img/runner.png"/>
+                    <div class="project-logo">
+                        <img src="./static/img/runner.png"/>
+                    </div>
                     <h3 class="project-title">Sanity Runner</h3>
                     <p class="project-description">
                         Jenkins Timeline is a Jenkins Plugin that allows users to gain knowledge
                         about the execution of their builds 
                     </p>
                     <p class="project-links">
-                        <a class="pink link" href="http://localhost">Website</a>
-                        <a class="pink link" href="http://localhost">Github</a>
+                        <a class="pink link" href="https://tophat.github.io/sanity-runner">Website</a>
+                        <a class="pink link" href="https://www.github.com/tophat/sanity-runner">Github</a>
                     </p>
                 </div>
 
                 <div class="project-card">
-                    <img src="./static/img/codewatch.png"/>
+                    <div class="project-logo">
+                        <img src="./static/img/codewatch.png"/>
+                    </div>
                     <h3 class="project-title">Codewatch</h3>
                     <p class="project-description">
                     Add highly customizable assertions and/or metrics based on your codebases's AST (Abstract Syntax Tree)
                     </p>
                     <p class="project-links">
-                        <a class="pink link" href="http://localhost">Website</a>
-                        <a class="pink link" href="http://localhost">Github</a>
+                        <a class="pink link" href="https://tophat.github.io/codewatch">Website</a>
+                        <a class="pink link" href="https://www.github.com/tophat/codewatch">Github</a>
                     </p>
                 </div>
             </div>
@@ -132,9 +144,17 @@
                         <h2>Join the Discussion</h2>
                         <div class="column-content">
                             <p>Give us your email and we'll invite you to Top Hat's Open Source Slack community!</p>
-                            <input id="email" name="email" />
+                            <form id="slack-invite">
+                                <div class="field">
+                                    <input id="email" name="email" />
+                                    <i class="fa fa-check-circle fa-lg slack-success" aria-hidden="true"></i>
+                                    <span class="form-submit-message success">Please check your email for an invite!</span>
+                                    <span class="form-submit-message error">Something went wrong</span>
+                                    <span class="form-submit-message invalid">Please enter a valid email address</span>
+                                </div>
+                            </form>
                         </div>
-                        <button class="button pink">Submit</button>
+                        <button id="slack-submit-button" class="button pink">Submit</button>
                     </div>
                 </div>
             </div>
@@ -143,25 +163,37 @@
         <section class="footer">
             <div class="container">
                 <div class="links">
-                   <span class="fa-stack fa-sm">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-                    </span> 
-                   <span class="fa-stack fa-sm">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                    </span> 
-                   <span class="fa-stack fa-sm">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span> 
-                   <span class="fa-stack fa-sm">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                    </span> 
+                    <a href="https://www.github.com/tophat">
+                       <span class="fa-stack fa-sm">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+                       </span>
+                    </a>
+
+                    <a href="https://www.medium.com/@tophat">
+                       <span class="fa-stack fa-sm">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                       </span>
+                    </a>
+
+                    <a href="https://www.twitter.com/tophat">
+                       <span class="fa-stack fa-sm">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                       </span>
+                    </a>
+
+                    <a href="https://www.facebook.com/tophat">
+                       <span class="fa-stack fa-sm">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                       </span>
+                    </a>
                 </div>
                 <div class="copyright">&copy; 2018 TopHat Monocle Corp.</div>
             </div>
         </section>
     </body>
+    <script src="./static/js/slack.js"></script>
 </html>

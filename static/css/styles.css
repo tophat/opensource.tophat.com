@@ -270,3 +270,49 @@ section {
     padding-top: 45px;
 }
 
+.explore {
+    margin-top: -30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-logo {
+    height: 55px;
+}
+
+.button:hover {
+    background-color: #f34a79;
+    cursor: pointer;
+}
+
+#success-message { 
+    position: fixed; 
+    margin-top: 1000px;
+}
+
+.field {
+    position: relative;
+}
+
+.field i.fa {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: green;
+    visibility: hidden;
+}
+
+.form-submit-message { 
+    position: absolute;
+    top: 55px;
+    visibility: hidden;
+    color: #515151;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
