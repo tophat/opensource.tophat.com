@@ -316,3 +316,9 @@ section {
     text-decoration: none;
     color: black;
 }
+
+a.button {
+    text-decoration: none; 
+    color: inherit;
+    height: 55px;
+}
