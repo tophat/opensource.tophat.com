@@ -72,6 +72,13 @@ section {
     background-color: #e5166b;
 }
 
+.form-submit-message { 
+    position: absolute;
+    top: 55px;
+    visibility: hidden;
+    color: #515151;
+}
+
 .project-card {
     text-align: left;
     background-color: #fff;
@@ -205,6 +212,14 @@ section {
     border-left: 2px solid #d9d9d9;
 }
 
+.field i.fa {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: green;
+    visibility: hidden;
+}
+
 @media (max-width: 1024px) {
     .banner h1 {
         font-size: 44px;
@@ -241,6 +256,19 @@ section {
 }
 
 @media (max-width: 960px) {
+    .header { 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navigation span {
+        margin-left: 10px;
+    }
+
+    .join {
+        text-align: center;
+    }
+
     .banner {
         margin-left: 20px;
     }
@@ -253,11 +281,37 @@ section {
     }
 
     .button {
+        height: 40px;
         font-size: 16px;
     }
 
     .column-content {
-        height: 120px;
+        height: 150px;
+    }
+
+    #email {
+        width: 80%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .links span {
+        margin-right: 5px;
+    }
+
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form-submit-message {
+        display: block;
+        position: relative; 
+        top: 5px;
+    }
+
+    .field i.fa {
+        right: 50px;
     }
 }
 
@@ -295,21 +349,6 @@ section {
 
 .field {
     position: relative;
-}
-
-.field i.fa {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: green;
-    visibility: hidden;
-}
-
-.form-submit-message { 
-    position: absolute;
-    top: 55px;
-    visibility: hidden;
-    color: #515151;
 }
 
 .links a {
