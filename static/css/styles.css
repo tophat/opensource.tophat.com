@@ -115,11 +115,18 @@ section {
 }
 
 .hero {
-    background-image: url('../img/background-full.png');
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
     height: 500px;
+}
+
+.hero .stripe-bg {
+    background-image: url('../img/background-full.png');
+    background-size:     auto;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: top center;
+    background-position-y: -135px; 
+    height: 650px; width: 100%;
+    position: absolute; z-index: -1;
+    top: 0; left: 0;
 }
 
 .header {
@@ -137,9 +144,35 @@ section {
     margin-left: 20px;
 }
 
-.header .logo {
-    font-size: 24px;
-    color: #FFFFFF;
+.header .logo .tophat-logo {
+    width: 139px;
+    height: 19px;
+    float: left;
+    padding-top: 9px;
+    margin-right: 25px;
+}
+
+.header .logo .logo-divider {
+    height: 40px;
+    width: 1px;
+    background: white;
+    opacity: 0.5;
+    float: left;
+    margin-top: -2px;
+}
+
+.header .logo .open-source-logo {
+    width: 218px;
+    height: 36px;
+    margin-left: 25px;
+    float: left;
+}
+
+@media (max-width: 650px) { 
+    .logo { margin-left: 15px; }
+    .header .logo .tophat-logo { padding: 0; margin: 0; float: none; display: block; }
+    .header .logo .logo-divider { display: none; }
+    .header .logo .open-source-logo { width: 136px; height: 22px; margin: 14px 0 0; float: none; display: block; }
 }
 
 .banner {
@@ -187,7 +220,7 @@ section {
 }
 
 .hero {
-    padding-top: 35px;
+    padding-top: 60px;
 }
 
 .container { 
