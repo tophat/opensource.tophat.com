@@ -27,7 +27,7 @@ const showFormValidation = messageType => {
 
 const hideMessages = () => {
     const elements = document.getElementsByClassName('form-submit-message')
-    for(let i = 0; i < elements.length; i++){ 
+    for(let i = 0; i < elements.length; i++){
         element = elements[i]
         element.style.visibility = 'hidden'
     }
@@ -43,14 +43,13 @@ const handleFormSubmit = (e) => {
     e.preventDefault()
     hideMessages()
     const email = document.getElementById('email').value
-    if(!email) return
 
-    const isValid = validateEmail(email)
+    const isValid = email && validateEmail(email)
     if(!isValid){
         const element = document.getElementsByClassName('form-submit-message invalid')[0]
         element.style.visibility = 'visible';
         return
-    }    
+    }
 
     var http = new XMLHttpRequest();
     var url = 'https://slackinvite.dev.tophat.com/invite';
