@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Top Hat Open Source Portal</title>
+        <link href="../static/css/normalize.css" rel="stylesheet" />
+        <link href="../static/css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.typotheque.com/WF-029067-010445.css" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="google-site-verification" content="0b8DCHmoQCopcbvnRyhxbjgHm31AqxvOFyi5VtT7kbQ" />
+        <meta property="og:title" content="Top Hat Open Source " />
+        <meta property="og:description" content="Open Source at Top Hat: working to make education & technology open to the world" />
+        <meta property="og:site_name" content="Top Hat Open Source" />
+        <meta property="og:url" content="https://opensource.tophat.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://cdn-images-1.medium.com/max/2000/1*eG2MFl0sGRKFmd_USgA_8Q.jpeg" />
+    </head>
+    <body>
+        <section class="hero">
+            <div class="stripe-bg"></div>
+            <div class="header">
+                <div class="logo">
+                    <a href="https://www.tophat.com/"><img class="tophat-logo" src="../static/img/tophat-logo-white.svg"></a>
+                    <div class="logo-divider"></div>
+                    <img class="open-source-logo" src="../static/img/open-source-logo-all-white.svg">
+                </div>
+                <div class="navigation">
+                    <span><a href="https://www.github.com/tophat">Github</a></span>
+                    <span><a href="https://www.tophat.com/blog">Blog</a></span>
+                    <span><a href="https://www.tophat.com/company/work-with-us">Careers</a></span>
+                </div>
+            </div>
+        </section>
+        <section class="join slack">
+            <div class="slack-card">
+                <div class="slack-wrapper">
+                    <h2 id="join-slack">Join our Slack Workspace  <i class="fab fa-slack"></i></h2>
+                        <div class="column-content">
+                            <p>Give us your email and we'll invite you to Top Hat's Open Source Slack community!</p>
+                            <form id="slack-invite">
+                                <div class="field">
+                                    <input id="email" name="email" placeholder="Enter your email..." type="email" />
+                                    <i class="fa fa-check-circle fa-lg slack-success" aria-hidden="true"></i>
+                                    <span class="form-submit-message success">Please check your email for an invite!</span>
+                                    <span class="form-submit-message resubmit">You have already been invited to Slack!</span>
+                                    <span class="form-submit-message error">Something went wrong. Please visit our <a href="https://tophat-opensource.slack.com">Slack</a> directly.</span>
+                                    <span class="form-submit-message invalid">Please enter a valid email address</span>
+                                </div>
+                            </form>
+                        </div>
+                        <button id="slack-submit-button" class="button pink">Submit</button>
+                    </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="links">
+                    <a href="https://www.github.com/tophat">
+                       <span class="fa-stack fa-sm">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
+                       </span>
+                    </a>
+
+                    <a href="https://www.medium.com/@tophat">
+                       <span class="fa-stack fa-sm">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fab fa-medium-m fa-stack-1x fa-inverse"></i>
+                       </span>
+                    </a>
+
+                    <a href="https://www.twitter.com/tophat">
+                       <span class="fa-stack fa-sm">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                       </span>
+                    </a>
+
+                    <a href="https://www.facebook.com/TopHatHQ">
+                       <span class="fa-stack fa-sm">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                       </span>
+                    </a>
+                </div>
+                <div class="copyright">Top Hat Open Source</div>
+            </div>
+        </section>
+    </body>
+    <script src="../static/js/slack.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129741728-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-129741728-1');
+    </script>
+</html>

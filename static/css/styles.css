@@ -53,7 +53,7 @@ section {
     content: '';
     position: absolute;
     height: 48px;
-    background: red; 
+    background: red;
     width: 1px;
     top: 0;
     right: -1px;
@@ -72,11 +72,12 @@ section {
     background-color: #e5166b;
 }
 
-.form-submit-message { 
+.form-submit-message {
     position: absolute;
     top: 55px;
     visibility: hidden;
     color: #515151;
+    left: 0;
 }
 
 .project-card {
@@ -123,10 +124,42 @@ section {
     background-size:     auto;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: top center;
-    background-position-y: -135px; 
+    background-position-y: -135px;
     height: 650px; width: 100%;
     position: absolute; z-index: -1;
     top: 0; left: 0;
+}
+
+.slack-card {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    width: 586px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: -400px;
+}
+
+.join .slack-card input {
+    padding: 15px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.join.slack {
+    padding: 0;
+    background: #ffffff;
+    margin-bottom: 50px;
+}
+
+.slack-wrapper {
+    padding: 40px;
+}
+
+#slack-submit-button {
+    position: relative;
+    z-index: 10;
 }
 
 .header {
@@ -168,7 +201,7 @@ section {
     float: left;
 }
 
-@media (max-width: 650px) { 
+@media (max-width: 650px) {
     .logo { margin-left: 15px; }
     .header .logo .tophat-logo { padding: 0; margin: 0; float: none; display: block; }
     .header .logo .logo-divider { display: none; }
@@ -195,12 +228,12 @@ section {
     padding-bottom: 48px;
 }
 
-.footer .copyright { 
+.footer .copyright {
     float: right;
     font-weight: 300;
 }
 
-.footer .links { 
+.footer .links {
     float: left;
 }
 
@@ -223,7 +256,7 @@ section {
     padding-top: 60px;
 }
 
-.container { 
+.container {
     max-width: 1250px;
     margin: 0 auto;
 }
@@ -262,7 +295,7 @@ section {
         font-size: 18px;
     }
 
-    .banner { 
+    .banner {
         margin-top: 100px;
     }
 
@@ -283,13 +316,13 @@ section {
         padding-right: 50px;
     }
 
-    .border { 
+    .border {
         display: none;
     }
 }
 
 @media (max-width: 960px) {
-    .header { 
+    .header {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -339,7 +372,7 @@ section {
 
     .form-submit-message {
         display: block;
-        position: relative; 
+        position: relative;
         top: 5px;
     }
 
@@ -375,8 +408,8 @@ section {
     cursor: pointer;
 }
 
-#success-message { 
-    position: fixed; 
+#success-message {
+    position: fixed;
     margin-top: 1000px;
 }
 
@@ -390,7 +423,7 @@ section {
 }
 
 a.button {
-    text-decoration: none; 
+    text-decoration: none;
     color: inherit;
     height: 55px;
 }
