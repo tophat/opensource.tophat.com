@@ -405,6 +405,10 @@ section {
     height: 55px;
 }
 
+.project-logo img {
+    max-height: 55px;
+}
+
 .button:hover {
     background-color: #f34a79;
     cursor: pointer;
