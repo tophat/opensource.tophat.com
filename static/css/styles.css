@@ -113,6 +113,10 @@ section {
     opacity: 0;
 }
 
+.project-stars > .fas {
+    margin-right: 5px;
+}
+
 .pink.link {
     color: #e5166b;
     text-decoration: none;
