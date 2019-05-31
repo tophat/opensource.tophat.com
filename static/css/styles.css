@@ -108,6 +108,11 @@ section {
     float: right;
 }
 
+.project-stars {
+    transition: 0.5s;
+    opacity: 0;
+}
+
 .pink.link {
     color: #e5166b;
     text-decoration: none;
