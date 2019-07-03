@@ -12,22 +12,36 @@ function fetchRepoDataBlob() {
     http.send()
 }
 
+function _sortByStarCount(gazers) {
+    return Object.entries(gazers).sort(function(first, second) {
+        const firstCount = first[1]
+        const secondCount = second[1]
+
+        if (firstCount < secondCount) return -1
+        else if (firstCount > secondCount) return 1
+        else return 0
+    })
+}
+
 function gatherStargazerData(response) {
-    return response.reduce(function (acc, project) {
+    const gazers = response.reduce(function (acc, project) {
         const { name, stargazers_count: stars } = project
         acc[name] = stars
         return acc
     }, {})
+    return _sortByStarCount(gazers)
 }
 
 function insertStargazerBadges(starCounts) {
-    Object.entries(starCounts).forEach(function([project, item]) {
+    starCounts.forEach(function([project, item], index) {
         const badge = document.querySelector(".project-stars[data-project='" + project +"']")
-
+       
         if (badge) {
+            const projectBox = badge.parentNode
             const count = badge.querySelector('.count')
             count.innerText = item
             badge.style.opacity = 1
+            projectBox.style.order = index
         }
     })
 }
