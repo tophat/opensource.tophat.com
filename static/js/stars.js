@@ -3,10 +3,15 @@ function fetchRepoDataBlob() {
     let http = new XMLHttpRequest()
     http.open('GET', endpoint, true)
     http.onreadystatechange = function() {
-        if (http.readyState === 4) {
+        if (http.readyState !== 4) return
+
+        if (http.status === 200 && http.response) {
             const responseData = JSON.parse(http.response)
             const starCount = gatherStargazerData(responseData)
+            console.log(starCount)
             insertStargazerBadges(starCount)
+        } else {
+            disableStargazerBadges()
         }
     }
     http.send()
@@ -14,22 +19,29 @@ function fetchRepoDataBlob() {
 
 function _sortByStarCount(gazers) {
     return Object.entries(gazers).sort(function(first, second) {
-        const firstCount = first[1]
-        const secondCount = second[1]
+        const firstCount = first[1].stars
+        const secondCount = second[1].stars
+        return firstCount - secondCount
+    })
+}
 
-        if (firstCount < secondCount) return -1
-        else if (firstCount > secondCount) return 1
+function _sortByLastPush(gazers) {
+    return Object.entries(gazers).sort(function(first, second) {
+        const firstActive = new Date(first[1].active)
+        const secondActive = new Date(second[1].active)
+        if (firstActive < secondActive) return -1
+        else if (firstActive > secondActive) return 1
         else return 0
     })
 }
 
 function gatherStargazerData(response) {
     const gazers = response.reduce(function (acc, project) {
-        const { name, stargazers_count: stars } = project
-        acc[name] = stars
+        const { name, stargazers_count: stars, pushed_at:active } = project
+        acc[name] = { stars, active }
         return acc
     }, {})
-    return _sortByStarCount(gazers)
+    return _sortByLastPush(gazers)
 }
 
 function insertStargazerBadges(starCounts) {
@@ -39,11 +51,15 @@ function insertStargazerBadges(starCounts) {
         if (badge) {
             const projectBox = badge.parentNode
             const count = badge.querySelector('.count')
-            count.innerText = item
+            count.innerText = item.stars
             badge.style.opacity = 1
             projectBox.style.order = index
         }
     })
+}
+
+function disableStargazerBadges() {
+   Array(...document.getElementsByClassName('project-stars')).forEach(item => { item.remove() })
 }
 
 fetchRepoDataBlob()
