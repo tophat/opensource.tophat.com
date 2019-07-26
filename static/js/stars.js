@@ -8,7 +8,6 @@ function fetchRepoDataBlob() {
         if (http.status === 200 && http.response) {
             const responseData = JSON.parse(http.response)
             const starCount = gatherStargazerData(responseData)
-            console.log(starCount)
             insertStargazerBadges(starCount)
         } else {
             disableStargazerBadges()
@@ -29,8 +28,8 @@ function _sortByLastPush(gazers) {
     return Object.entries(gazers).sort(function(first, second) {
         const firstActive = new Date(first[1].active)
         const secondActive = new Date(second[1].active)
-        if (firstActive < secondActive) return -1
-        else if (firstActive > secondActive) return 1
+        if (firstActive < secondActive) return 1
+        else if (firstActive > secondActive) return -1
         else return 0
     })
 }
