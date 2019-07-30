@@ -45,7 +45,7 @@ function gatherStargazerData(response) {
 
 function insertStargazerBadges(starCounts) {
     starCounts.forEach(function([project, item], index) {
-        const badge = document.querySelector(".project-stars[data-project='" + project +"']")
+         const badge = document.querySelector(`.project-stars[data-project='${project}']`)
         if (badge) {
             const projectBox = badge.parentNode
             const count = badge.querySelector('.count')
