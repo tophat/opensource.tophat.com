@@ -57,7 +57,7 @@ function insertStargazerBadges(starCounts) {
 }
 
 function disableStargazerBadges() {
-   Array(...document.getElementsByClassName('project-stars')).forEach(item => { item.remove() })
+   [...document.getElementsByClassName('project-stars')].forEach(item => item.remove())
 }
 
 fetchRepoDataBlob()
