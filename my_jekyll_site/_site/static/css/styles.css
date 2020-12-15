@@ -1,0 +1,443 @@
+body {
+    font-family: 'October Regular 3';
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 500;
+}
+p {
+    font-family: 'October 3';
+    font-weight: 300;
+}
+.section-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+section {
+    text-align: center;
+    padding: 60px 100px;
+}
+.explore {
+    padding-top: 0 !important;
+}
+
+.join {
+    background-color: #fbf8ff;
+}
+
+.join-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex-basis: 500px;
+
+}
+
+.column::before {
+    content: '';
+    position: absolute;
+    height: 48px;
+    background: red;
+    width: 1px;
+    top: 0;
+    right: -1px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    height: 55px;
+    color: #fff;
+    border: none;
+}
+
+.button.pink {
+    background-color: #e5166b;
+}
+
+.form-submit-message {
+    position: absolute;
+    top: 55px;
+    visibility: hidden;
+    color: #515151;
+    left: 0;
+}
+
+.project-card {
+    text-align: left;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    padding: 40px;
+    width: 293px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 30px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project-description {
+    font-size: 16px;
+    height: 100px;
+}
+
+.project-links {
+    float: right;
+}
+
+.project-stars {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.project-stars > .fas {
+    margin-right: 5px;
+}
+
+.pink.link {
+    color: #e5166b;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.hero {
+    height: 500px;
+}
+
+.hero .stripe-bg {
+    background-image: url('../img/background-full.png');
+    background-size:     auto;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: top center;
+    background-position-y: -135px;
+    height: 650px; width: 100%;
+    position: absolute; z-index: -1;
+    top: 0; left: 0;
+}
+
+.slack-card {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    width: 586px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: -400px;
+}
+
+.join .slack-card input {
+    height: auto;
+    box-sizing: border-box;
+}
+
+.join.slack {
+    padding: 0;
+    background: #ffffff;
+    margin-bottom: 50px;
+}
+
+.slack-wrapper {
+    padding: 40px;
+}
+
+#slack-submit-button {
+    position: relative;
+    z-index: 10;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navigation span {
+    margin-left: 20px;
+}
+
+.header .logo .tophat-logo {
+    width: 139px;
+    height: 19px;
+    float: left;
+    padding-top: 9px;
+    margin-right: 25px;
+}
+
+.header .logo .logo-divider {
+    height: 40px;
+    width: 1px;
+    background: white;
+    opacity: 0.5;
+    float: left;
+    margin-top: -2px;
+}
+
+.header .logo .open-source-logo {
+    width: 218px;
+    height: 36px;
+    margin-left: 25px;
+    float: left;
+}
+
+@media (max-width: 650px) {
+    .logo { margin-left: 15px; }
+    .header .logo .tophat-logo { padding: 0; margin: 0; float: none; display: block; }
+    .header .logo .logo-divider { display: none; }
+    .header .logo .open-source-logo { width: 136px; height: 22px; margin: 14px 0 0; float: none; display: block; }
+}
+
+.banner {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 50px;
+    color: #FFFFFF;
+}
+
+.banner h1 {
+    font-size: 58px;
+}
+
+.banner .subtext {
+    font-size: 22px;
+}
+
+.footer {
+    padding-top: 32px;
+    padding-bottom: 48px;
+}
+
+.footer .copyright {
+    float: right;
+    font-weight: 300;
+}
+
+.footer .links {
+    float: left;
+}
+
+.join {
+    display: flex;
+    text-align: left;
+}
+
+.join p {
+    max-width: 960px;
+    padding-top: 0;
+    font-size: 20px;
+}
+
+.links span {
+    margin-right: 15px;
+}
+
+.hero {
+    padding-top: 60px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.join h1 {
+    text-align: center;
+}
+
+.join input {
+    width: 100%;
+    padding: 12px;
+}
+
+.column-content {
+    height: 170px;
+}
+
+.border{
+    border-left: 2px solid #d9d9d9;
+}
+
+.field i.fa {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: green;
+    visibility: hidden;
+}
+
+@media (max-width: 1024px) {
+    .banner h1 {
+        font-size: 44px;
+    }
+
+    .banner .subtext {
+        font-size: 18px;
+    }
+
+    .banner {
+        margin-top: 100px;
+    }
+
+    .project-card {
+        width: 250px;
+    }
+
+    .column-content {
+        height: 120px;
+    }
+
+    .column-content p {
+        font-size: 16px;
+    }
+
+    section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .border {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navigation span {
+        margin-left: 10px;
+    }
+
+    .join {
+        text-align: center;
+    }
+
+    .banner {
+        margin-left: 20px;
+    }
+    .banner h1 {
+        font-size: 36px;
+    }
+    section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .button {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .column-content {
+        height: 150px;
+    }
+
+    #email {
+        width: 80%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .links span {
+        margin-right: 5px;
+    }
+
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form-submit-message {
+        display: block;
+        position: relative;
+        top: 5px;
+    }
+
+    .field i.fa {
+        right: 50px;
+    }
+}
+
+.button {
+    padding: 10px 18px 9px;
+}
+.button.disabled {
+    opacity: 0.5;
+}
+
+.join {
+    padding-bottom: 80px;
+    padding-top: 45px;
+}
+
+.explore {
+    margin-top: -30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-logo {
+    height: 55px;
+}
+
+.project-logo img {
+    max-height: 55px;
+}
+
+.button:hover {
+    background-color: #f34a79;
+    cursor: pointer;
+}
+
+#success-message {
+    position: fixed;
+    margin-top: 1000px;
+}
+
+.field {
+    position: relative;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+a.button {
+    text-decoration: none;
+    color: inherit;
+    height: 55px;
+}
