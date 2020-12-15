@@ -1,33 +1,14 @@
 <section class="footer">
     <div class="container">
         <div class="links">
-            <a href="https://www.github.com/tophat">
-               <span class="fa-stack fa-sm">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
-               </span>
-            </a>
-
-            <a href="https://www.medium.com/top-hat-engineering">
-               <span class="fa-stack fa-sm">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-medium-m fa-stack-1x fa-inverse"></i>
-               </span>
-            </a>
-
-            <a href="https://www.twitter.com/tophat">
-               <span class="fa-stack fa-sm">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-               </span>
-            </a>
-
-            <a href="https://www.facebook.com/TopHatHQ">
-               <span class="fa-stack fa-sm">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-               </span>
-            </a>
+            {% for social_media_link in site.data.social_media_links %}
+                <a href="{{ social_media_link.link }}">
+                <span class="fa-stack fa-sm">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab {{ social_media_link.fa_icon }} fa-stack-1x fa-inverse"></i>
+                </span>
+                </a>
+            {% endfor %}
         </div>
         <div class="copyright">Top Hat Open Source</div>
     </div>

@@ -7,9 +7,9 @@
             <img class="open-source-logo" src="static/img/open-source-logo-all-white.svg">
         </div>
         <div class="navigation">
-            <span><a href="https://www.github.com/tophat">Github</a></span>
-            <span><a href="https://medium.com/top-hat-engineering/tagged/open-source">Blog</a></span>
-            <span><a href="https://www.tophat.com/company/work-with-us">Careers</a></span>
+            {% for link in site.data.header_navigation_links %}
+                <span><a href="{{ link.link }}">{{ link.text }}</a></span>
+            {% endfor %}
         </div>
     </div>
     <div class="banner">
