@@ -11,7 +11,7 @@
 - img_src: static/img/syrupy.png
   title: Syrupy
   data_project: syrupy
-  description: 🥞 The sweeter pytest snapshot plugin
+  description: Syrupy is a pytest snapshot plugin. It enables developers to write tests which assert immutability of computed results. It brings jest-style snapshots to python.
   links:
     - link: https://tophat.github.io/syrupy
       text: Website
