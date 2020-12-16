@@ -14,6 +14,7 @@ The easiest way to get started is to join the [slack workspace](https://opensour
 ### Local Development
 This site uses Jekyll
  - Install Jekyll by following docs on [their website](https://jekyllrb.com/docs/)
+   - If you want to use Bundler to add Jekyll to your project, follow [this doc](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) instead
  - Run `bundle exec jekyll serve` to get the site running locally
 
 ## Credits
