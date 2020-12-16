@@ -8,6 +8,16 @@
     - link: https://www.github.com/tophat/yvm
       text: GitHub
 
+- img_src: static/img/syrupy.png
+  title: Syrupy
+  data_project: syrupy
+  description: Syrupy is a pytest snapshot plugin. It enables developers to write tests which assert immutability of computed results. It brings jest-style snapshots to Python.
+  links:
+    - link: https://tophat.github.io/syrupy
+      text: Website
+    - link: https://www.github.com/tophat/syrupy
+      text: GitHub
+
 - img_src: static/img/jenkins.png
   title: Jenkins TL
   data_project: jenkins-timeline-plugin
@@ -46,16 +56,6 @@
     - link: https://sanity-runner.js.org
       text: Website
     - link: https://www.github.com/tophat/sanity-runner
-      text: GitHub
-
-- img_src: static/img/codewatch.png
-  title: Codewatch
-  data_project: codewatch
-  description: Add highly customizable assertions and/or metrics based on your codebases's AST (Abstract Syntax Tree)
-  links:
-    - link: https://codewatch.io
-      text: Website
-    - link: https://www.github.com/tophat/codewatch
       text: GitHub
 
 - img_src: static/img/monodeploy.svg
