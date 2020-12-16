@@ -1,11 +1,15 @@
 - link: https://www.github.com/tophat
   fa_icon: fa-github-alt
+  name: GitHub
 
 - link: https://www.medium.com/top-hat-engineering
   fa_icon: fa-medium-m
+  name: Medium
 
 - link: https://www.twitter.com/tophat
   fa_icon: fa-twitter
+  name: Twitter
 
 - link: https://www.facebook.com/TopHatHQ
   fa_icon: fa-facebook-f
+  name: Facebook

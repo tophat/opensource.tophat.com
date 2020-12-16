@@ -2,7 +2,7 @@
     <div class="container">
         <div class="links">
             {% for social_media_link in site.data.social_media_links %}
-                <a href="{{ social_media_link.link }}">
+                <a href="{{ social_media_link.link }}" aria-label="{{ social_media_link.name }}">
                 <span class="fa-stack fa-sm">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fab {{ social_media_link.fa_icon }} fa-stack-1x fa-inverse"></i>
