@@ -1,0 +1,25 @@
+<section class="hero">
+    <div class="stripe-bg"></div>
+    <div class="header">
+        <div class="logo">
+            <a href="https://www.tophat.com/"><img class="tophat-logo" src="static/img/tophat-logo-white.svg"></a>
+            <div class="logo-divider"></div>
+            {% if page.id == 'index' %}
+            <img class="open-source-logo" src="static/img/open-source-logo-all-white.svg">
+            {% else %}
+            <a href="/"><img class="open-source-logo" src="../static/img/open-source-logo-all-white.svg"></a>
+            {% endif %}
+        </div>
+        <div class="navigation">
+            {% for link in site.data.header_navigation_links %}
+                <span><a href="{{ link.link }}">{{ link.text }}</a></span>
+            {% endfor %}
+        </div>
+    </div>
+    {% if page.id == 'index' %}
+    <div class="banner">
+        <h1>Open Source at Top Hat</h1>
+        <div class="subtext">Working to make education & technology open to the world</div>
+    </div>
+    {% endif %}
+</section>

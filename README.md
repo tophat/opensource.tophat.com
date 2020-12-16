@@ -11,6 +11,11 @@ Top Hats open source portal
 ## I want to Contribute
 The easiest way to get started is to join the [slack workspace](https://opensource.tophat.com/#join-slack) and head to the opensource-portal channel.
 
+### Local Development
+This site uses Jekyll
+ - Install Jekyll by following docs on [their website](https://jekyllrb.com/docs/)
+   - If you want to use Bundler to add Jekyll to your project, follow [this doc](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) instead
+ - Run `bundle exec jekyll serve` to get the site running locally
 
 ## Credits
 Thanks to Carol Skelly for donating the github organization!
