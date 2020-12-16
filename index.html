@@ -10,9 +10,9 @@ id: index
         {% for project in site.data.projects %}
             <div class="project-card">
                 <div class="project-logo">
-                    <img src="{{ project.img_src }}">
+                    <img src="{{ project.img_src }}" role="none">
                 </div>
-                <h3 class="project-title">{{ project.title }}</h3>
+                <h2 class="project-title">{{ project.title }}</h3>
                 <div class="project-stars" data-project="{{ project.data_project }}"><i class="fas fa-star"></i><span class="count"></span></div>
                 <p class="project-description">
                     {{ project.description }}
