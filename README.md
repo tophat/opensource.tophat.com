@@ -12,11 +12,12 @@ Top Hats open source portal
 ### Local Development
 This site uses Jekyll. There are multiple ways to install and run Jekyll:
  1. The easiest way is using the Jekyll docker [image](https://hub.docker.com/r/jekyll/jekyll/). There is a [Makefile](./Makefile) in this repository which uses the docker image
- 	- Simply run `make start` and start developing
+    - Make sure you have [Docker service](https://docs.docker.com/get-docker/) installed and running
+    - Simply run `make start` and start developing
  1. If you don't want to use the docker image, you can install Jekyll as a gem by following [this doc](https://jekyllrb.com/docs/)
- 	- Run `bundle exec jekyll serve` to get the site running locally
+    - Run `bundle exec jekyll serve` to get the site running locally
  1. If you want to use Bundler to add Jekyll to your project, follow [this doc](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) instead
- 	- Run `bundle exec jekyll serve` to get the site running locally
+    - Run `bundle exec jekyll serve` to get the site running locally
 
 ## Credits
 Thanks to Carol Skelly for donating the github organization!
