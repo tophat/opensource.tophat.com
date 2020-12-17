@@ -6,9 +6,9 @@ id: index
 <section class="explore" role="main" aria-labelledby="explore-projects">
     <div class="container">
     <h1 id="explore-projects" class="section-title">Explore Projects</h1>
-    <div id="projects">
+    <ul id="projects">
         {% for project in site.data.projects %}
-            <div class="project-card" id="{{ project.data_project }}">
+            <li class="project-card" id="{{ project.data_project }}">
                 <div class="project-logo">
                     <img src="{{ project.img_src }}" role="none">
                 </div>
@@ -22,9 +22,9 @@ id: index
                         <a class="pink link" href="{{ link.link }}" aria-label="{{ project.title }} {{ link.text }}">{{ link.text }}</a>
                     {% endfor %}
                 </p>
-            </div>
+            </li>
         {% endfor %}
-    </div>
+    </ul>
     </div>
 </section>
 
