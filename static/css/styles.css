@@ -195,6 +195,10 @@ section {
     margin-left: 20px;
 }
 
+.logo {
+    display: flex;
+}
+
 .header .logo .tophat-logo {
     width: 139px;
     height: 19px;
@@ -220,7 +224,7 @@ section {
 }
 
 @media (max-width: 650px) {
-    .logo { margin-left: 15px; }
+    .logo { margin-left: 15px; display: block; }
     .header .logo .tophat-logo { padding: 0; margin: 0; float: none; display: block; }
     .header .logo .logo-divider { display: none; }
     .header .logo .open-source-logo { width: 136px; height: 22px; margin: 14px 0 0; float: none; display: block; }
