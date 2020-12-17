@@ -8,7 +8,7 @@ id: index
     <h1 class="section-title">Explore Projects</h1>
     <div id="projects">
         {% for project in site.data.projects %}
-            <div class="project-card">
+            <div class="project-card" id="{{ project.data_project }}">
                 <div class="project-logo">
                     <img src="{{ project.img_src }}">
                 </div>

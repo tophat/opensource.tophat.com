@@ -95,5 +95,9 @@ const handleFormSubmit = (e) => {
 
 const form = document.getElementById('slack-invite')
 const submitButton = document.getElementById('slack-submit-button')
-form.addEventListener('submit', handleFormSubmit)
-submitButton.addEventListener('click', handleFormSubmit)
+if (form) {
+    form.addEventListener('submit', handleFormSubmit)
+}
+if (submitButton) {
+    submitButton.addEventListener('click', handleFormSubmit)
+}
