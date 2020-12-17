@@ -108,6 +108,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
+    padding-inline: 0;
 }
 .project-description {
     font-size: 16px;
