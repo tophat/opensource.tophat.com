@@ -53,10 +53,8 @@ function insertStargazerBadges(starCounts) {
         }
         const badge = document.querySelector(`.project-stars[data-project='${project}']`)
         if (badge) {
-            const projectBox = badge.parentNode
             const count = badge.querySelector('.count')
             count.innerText = item.stars
-            count.ariaLabel = `${item.stars} stars`
             badge.style.opacity = 1
         }
     })
