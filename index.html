@@ -13,13 +13,13 @@ id: index
                     <img src="{{ project.img_src }}" role="none">
                 </div>
                 <h2 class="project-title">{{ project.title }}</h2>
-                <div class="project-stars" data-project="{{ project.data_project }}" aria-label="Project stars"><i class="fas fa-star"></i><span class="count"></span></div>
+                <div class="project-stars" data-project="{{ project.data_project }}"><i class="fas fa-star"></i><span class="count" aria-label="Project stars"></span></div>
                 <p class="project-description">
                     {{ project.description }}
                 </p>
                 <p class="project-links">
                     {% for link in project.links %}
-                        <a class="pink link" href="{{ link.link }}">{{ link.text }}</a>
+                        <a class="pink link" href="{{ link.link }}" aria-label="{{ project.title }} {{ link.text }}">{{ link.text }}</a>
                     {% endfor %}
                 </p>
             </div>
