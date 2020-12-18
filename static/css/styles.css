@@ -59,16 +59,6 @@ section {
 
 }
 
-.column::before {
-    content: '';
-    position: absolute;
-    height: 48px;
-    background: red;
-    width: 1px;
-    top: 0;
-    right: -1px;
-}
-
 .button {
     padding: 10px;
     font-size: 20px;
@@ -80,14 +70,6 @@ section {
 
 .button.pink {
     background-color: #e5166b;
-}
-
-.form-submit-message {
-    position: absolute;
-    top: 55px;
-    visibility: hidden;
-    color: #515151;
-    left: 0;
 }
 
 .project-card {
@@ -137,48 +119,11 @@ section {
 
 .hero {
     height: 500px;
-}
-
-.hero .stripe-bg {
     background-image: url('../img/background-full.png');
-    background-size:     auto;                      /* <------ */
+    background-size:auto;
     background-repeat:   no-repeat;
     background-position: top center;
     background-position-y: -135px;
-    height: 650px; width: 100%;
-    position: absolute; z-index: -1;
-    top: 0; left: 0;
-}
-
-.slack-card {
-    text-align: center;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
-    width: 586px;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: -400px;
-}
-
-.join .slack-card input {
-    height: auto;
-    box-sizing: border-box;
-}
-
-.join.slack {
-    padding: 0;
-    background: #ffffff;
-    margin-bottom: 50px;
-}
-
-.slack-wrapper {
-    padding: 40px;
-}
-
-#slack-submit-button {
-    position: relative;
-    z-index: 10;
 }
 
 .header {
@@ -301,14 +246,6 @@ section {
     border-left: 2px solid #d9d9d9;
 }
 
-.field i.fa {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: green;
-    visibility: hidden;
-}
-
 @media (max-width: 1024px) {
     .banner h1 {
         font-size: 44px;
@@ -378,12 +315,6 @@ section {
         height: 150px;
     }
 
-    #email {
-        width: 80%;
-        height: 40px;
-        font-size: 16px;
-    }
-
     .links span {
         margin-right: 5px;
     }
@@ -391,12 +322,6 @@ section {
     .footer {
         padding-left: 10px;
         padding-right: 10px;
-    }
-
-    .form-submit-message {
-        display: block;
-        position: relative;
-        top: 5px;
     }
 
     .field i.fa {
