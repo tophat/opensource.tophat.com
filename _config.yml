@@ -3,3 +3,4 @@ description: >- # this means to ignore newlines
   Open Source at Top Hat: working to make education & technology open to the world
 url: https://opensource.tophat.com
 exclude: [slack.html]
+github: [metadata]

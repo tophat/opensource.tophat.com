@@ -103,7 +103,6 @@ section {
 
 .project-stars {
     transition: 0.5s;
-    opacity: 0;
 }
 
 .project-stars > .fas {
