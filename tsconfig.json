@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+      "target": "ES2020",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "downlevelIteration": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": true,
+      "emitDeclarationOnly": false,
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "allowJs": true,
+      "jsx": "preserve",
+      "lib": [
+          "ES2020",
+          "dom",
+          "dom.iterable"
+      ]
+  },
+  "include": ["src", ".eslintrc.js", "gatsby*"],
+  "ts-node": {
+      "transpileOnly": true,
+      "ignore": ["(?:^|/)node_modules/", ".yarn/plugins/.*"],
+  }
+}
