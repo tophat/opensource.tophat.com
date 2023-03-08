@@ -4,7 +4,7 @@
   "packageManager": "yarn@3.4.1",
   "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
   "scripts": {
-    "build": "rm -rf .cache public && gatsby build --prefix-paths \"$@\" && rsync -rtuc --delete public/ ../docs/",
+    "build": "rm -rf .cache public && gatsby build --prefix-paths \"$@\" && rsync -rtuc --delete public/ ./docs/",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
