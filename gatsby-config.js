@@ -36,6 +36,7 @@ module.exports = {
                 theme_color: '#803ed7',
                 display: 'minimal-ui',
                 icon: 'src/images/favicon/favicon-32x32.png',
+                legacy: false,
             },
         },
         'gatsby-plugin-gatsby-cloud',
