@@ -29,6 +29,7 @@ export const Head: React.FC = () => (
             content="https://cdn-images-1.medium.com/max/2000/1*eG2MFl0sGRKFmd_USgA_8Q.jpeg"
         />
         <title>Top Hat Open Source Portal</title>
+        <link rel="icon" href="../images/favicon.ico"/>
         <link
             rel="stylesheet"
             href="https://fonts.typotheque.com/WF-029067-010445.css"
