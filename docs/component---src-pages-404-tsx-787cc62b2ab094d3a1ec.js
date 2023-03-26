@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkopensource_tophat_com=self.webpackChunkopensource_tophat_com||[]).push([[218],{3951:function(e,n,t){t.r(n),t.d(n,{default:function(){return o}});var u=t(9091),c=t(9953);function o(){return(0,c.useEffect)((()=>{(0,u.navigate)("/")}),[]),c.createElement("div",null,c.createElement("h1",null,"Page not found."))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-787cc62b2ab094d3a1ec.js.map
