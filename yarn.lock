@@ -3210,10 +3210,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0, @types/node@npm:^18.14.6":
+"@types/node@npm:*, @types/node@npm:>=10.0.0":
   version: 18.14.6
   resolution: "@types/node@npm:18.14.6"
   checksum: 2f88f482cabadc6dbddd627a1674239e68c3c9beab56eb4ae2309fb96fd17fc3a509d99b0309bafe13b58529574f49ecf3a583f2ebe2896dd32fe4be436dc96e
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.19.54":
+  version: 18.19.56
+  resolution: "@types/node@npm:18.19.56"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: 2660aa2e50ddb77e4ea4e29e6b917e942ca49ecbd46b6333a7aeffdffafc5d7e48f8a731b6570a61bebdd0ba8dc104a250c432bea00e70aec5a4cb6e6f2df771
   languageName: node
   linkType: hard
 
@@ -12460,7 +12469,7 @@ __metadata:
     "@types/babel__core": ^7.20.0
     "@types/loader-utils": ^2.0.3
     "@types/mdx-js__react": ^1.5.5
-    "@types/node": ^18.14.6
+    "@types/node": ^18.19.54
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
     "@types/react-helmet": ^6.1.6
@@ -15843,6 +15852,13 @@ __metadata:
     sprintf-js: ^1.1.1
     util-deprecate: ^1.0.2
   checksum: b7719c30e5d1fdda4ee9379e8d80dca2b0668942420ba365ae3410120e08225fe36707a7981ce0f921812dee6a2290b713cdce1e75e770b98e67a45d8a378d35
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
   languageName: node
   linkType: hard
 
